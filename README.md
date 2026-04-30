@@ -185,3 +185,21 @@ Think of it like:
 - Generate final answer  
 
 ---
+
+
+## ⚙️ Setup & Run
+
+```bash
+git clone https://github.com/revanthreddy24/Medical_Chatbot_GENAIProject_RAG-Python-Langchain-VectorDB-AWS/
+cd Medical_Chatbot_GENAIProject_RAG-Python-Langchain-VectorDB-AWS/
+
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+export OPENAI_API_KEY=your_openai_api_key
+export PINECONE_API_KEY=your_pinecone_api_key
+export PINECONE_ENV=your_environment   # Windows: set instead of export
+
+python app.py
