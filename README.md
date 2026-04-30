@@ -118,13 +118,39 @@ Reasoning:
   - Retrieve → Re-rank → Select best context  
 
 ---
+## 🔍 Monitoring, Debugging & Extensions
 
-Overall, these decisions were made to ensure the chatbot is:
-- ⚡ Fast  
-- 🎯 Contextually accurate  
-- 💡 Practical to run without heavy infrastructure  
+### 📊 Monitoring & Debugging
+- **LangSmith** (by LangChain) is used for:
+  - Tracing LLM calls  
+  - Debugging the RAG pipeline  
+  - Inspecting retrieved chunks and responses  
+  - Improving prompt quality and system behavior  
 
-And with the production improvements, it can scale into a much more **robust and high-accuracy system**.
+This makes it much easier to understand what’s happening internally and fix issues quickly.
+
+---
+
+### 📦 Handling More Data Types
+For scaling beyond PDF-based knowledge:
+
+- **LlamaIndex** can be used to handle:
+  - CSV files  
+  - JSON data  
+  - Images (via multimodal pipelines)  
+  - Structured and unstructured data sources  
+
+It provides better data connectors and indexing strategies for complex datasets.
+
+---
+
+### 🔄 Retrieval Improvements
+- LlamaIndex can also enhance:
+  - Data ingestion pipelines  
+  - Advanced retrieval strategies  
+  - Better context organization  
+
+This helps improve overall answer quality when working with diverse and large-scale data.
 
 
 
